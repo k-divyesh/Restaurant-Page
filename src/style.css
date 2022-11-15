@@ -1,0 +1,69 @@
+:root {
+    --primary: rgb(200, 200, 200);
+    --secondary: #2f2a27d4;
+}
+
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-image: url("./assets/img.avif"); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;
+    background-position: center;
+}
+
+#content {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8), transparent 50%);
+    width: 100vw;
+    height: 100vh;
+
+}
+
+header *{
+    font-family: 'Poppins', sans-serif;
+}
+
+.link{
+    color: rgb(183, 180, 180);
+    cursor: pointer;
+}
+
+header h1{
+    color: var(--primary);
+    cursor: pointer;
+}
+
+header {
+    display: flex; flex-direction: row; justify-content: space-between; align-items: center;
+    padding: 0 10%;
+}
+
+#links{
+    display: flex; justify-content: space-evenly; gap: 20%;
+}
+
+
+
+
+#content {
+    position: relative;
+}
+
+h2 {
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    left: 72%;
+    font-size: 2.3rem;
+    font-weight: 100;
+    font-family: 'Alfa Slab One';
+    color: var(--secondary);
+}
+
+
+h2 > a {
+    font-size: 1rem;
+}
