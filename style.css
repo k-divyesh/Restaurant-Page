@@ -34,8 +34,16 @@ header {
 }
 
 h1{
-    color: var(--primary);
     cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary);
+}
+
+a:hover {
+    text-underline-offset: 10px;
 }
 
 h1 > a:hover {
@@ -50,7 +58,7 @@ h1 > a:hover {
 }
 
 .link{
-    color: #bbb;
+
     cursor: pointer;
 }
 
@@ -58,6 +66,7 @@ h1 > a:hover {
     text-decoration: underline;
     text-decoration-color: var(--primary);
     text-decoration-thickness: 6px;
+
 }
 
 h2 {
@@ -70,9 +79,12 @@ h2 {
 h2 > a {
     font-size: 1.1rem;
     cursor: pointer;
+    color: var(--secondary);
 }
 
 h2 > a:hover {
     color: white;
     font-size: 1.2rem;
 }
+
+
