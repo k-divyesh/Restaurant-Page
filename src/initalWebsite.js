@@ -11,7 +11,7 @@ function createHeader() {
     header.appendChild(links);
     links.setAttribute("id","links")
 
-    var linksArr = ["MENU", "LOCATIONS", "CONTACT"];
+    var linksArr = ["HOME", "MENU", "CONTACT"];
     linksArr.forEach(element=> {
         var h4 = document.createElement("h4");
         links.appendChild(h4)
