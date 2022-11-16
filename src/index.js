@@ -1,6 +1,6 @@
 import loadHeader from "./loadHead";
 import emptyMain from "./clearMain"
-import initializeWebsite from "./initalWebsite";
+import initializeWebsite from "./loadHome";
 
 loadHeader();
 initializeWebsite();
