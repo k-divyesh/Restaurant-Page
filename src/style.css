@@ -1,6 +1,6 @@
 :root {
-    --primary: rgb(200, 200, 200);
-    --secondary: #2f2a27d4;
+    --primary: #c8c8c8;
+    --secondary: #303030;
 }
 
 
@@ -17,7 +17,7 @@ body {
 
 #content {
     background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8), transparent 50%);
-    width: 100vw;
+    width:100vw;
     height: 100vh;
 
 }
@@ -26,37 +26,46 @@ header *{
     font-family: 'Poppins', sans-serif;
 }
 
-.link{
-    color: rgb(183, 180, 180);
+header h1{
+    color: var(--primary);
     cursor: pointer;
 }
 
-header h1{
-    color: var(--primary);
+.link{
+    color: rgb(183, 180, 180);
     cursor: pointer;
 }
 
 header {
     display: flex; flex-direction: row; justify-content: space-between; align-items: center;
     padding: 0 10%;
+    position: sticky;
+    top: 0;
 }
 
 #links{
-    display: flex; justify-content: space-evenly; gap: 20%;
+    display: flex; justify-content: space-evenly; gap: 15%;
 }
 
-
-
+.link:hover, h1:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--secondary);
+    text-decoration-thickness: 6px;
+}
 
 #content {
     position: relative;
 }
 
+main {
+    border: 5px solid green;
+}
+
 h2 {
     position: absolute;
     right: 5%;
-    top: 25%;
-    left: 72%;
+    top: 55%;
+    left: 70.5%;
     font-size: 2.3rem;
     font-weight: 100;
     font-family: 'Alfa Slab One';
@@ -65,5 +74,13 @@ h2 {
 
 
 h2 > a {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
 }
+
+h2 > a:hover {
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+
+
