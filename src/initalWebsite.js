@@ -1,9 +1,15 @@
 function createHeader() {
     var header = document.createElement("header");
-
+    
+    var h1 = document.createElement("h1");
+    header.append(h1);
+    var heading = document.createElement("a")
+    heading.innerHTML = "Restaurant";
+    h1.append(heading)
+    
     var links = document.createElement("div");
-    header.appendChild(div);
-    div.setAttribute("id","links")
+    header.appendChild(links);
+    links.setAttribute("id","links")
 
     var linksArr = ["MENU", "LOCATIONS", "CONTACT"];
     linksArr.forEach(element=> {
@@ -14,7 +20,7 @@ function createHeader() {
         a.innerHTML = element;        
         a.classList.add("link")
     })
-    
+
     return header;
 }
 
@@ -30,7 +36,7 @@ function initializeWebsite() {
     const content = document.getElementById("content")
     console.log(content);
     content.appendChild(createHeader());
-    content.appendChild(createMain());
+    content.appendChild(createHeroText());
 }
 
 
