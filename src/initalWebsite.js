@@ -5,6 +5,7 @@ function createHeader() {
     header.append(h1);
     var heading = document.createElement("a")
     heading.innerHTML = "Restaurant";
+    heading.setAttribute("href", "./index.html")
     h1.append(heading)
     
     var links = document.createElement("div");
@@ -26,10 +27,11 @@ function createHeader() {
 
 
 function createHeroText() {
+    var main = document.createElement("main")
     var h2 = document.createElement("h2")
     h2.innerHTML = "Where every flavor tells a story<br><a>find out more...</a>"
-
-    return h2;
+    main.append(h2)
+    return main;
 }
 
 function initializeWebsite() {
