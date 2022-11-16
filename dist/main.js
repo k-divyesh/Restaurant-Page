@@ -1,1 +1,1 @@
-(()=>{var e=document.querySelector("h1");console.log(e)})();
+(()=>{"use strict";!function(){const e=document.getElementById("content");var t,n;console.log(e),e.appendChild((t=document.createElement("header"),n=document.createElement("div"),t.appendChild(div),div.setAttribute("id","links"),["MENU","LOCATIONS","CONTACT"].forEach((e=>{var t=document.createElement("h4");n.appendChild(t);var d=document.createElement("a");t.appendChild(d),d.innerHTML=e,d.classList.add("link")})),t)),e.appendChild(createMain())}()})();

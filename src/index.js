@@ -1,2 +1,3 @@
-var a = document.querySelector("h1")
-console.log(a)
+import initializeWebsite from "./initalWebsite";
+
+initializeWebsite();
