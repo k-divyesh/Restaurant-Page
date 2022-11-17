@@ -14,7 +14,7 @@ html, body {
 }
 
 body {
-    background-image: url("../src/img.avif"); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;
+    background-image: url("../src/img.jpg"); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;
     background-position: center;
 }
 
