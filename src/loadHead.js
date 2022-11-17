@@ -4,7 +4,7 @@ function createHeader() {
     var h1 = document.createElement("h1");
     header.append(h1);
     var heading = document.createElement("a")
-    heading.innerHTML = "Restaurant";
+    heading.innerHTML = "Feliza's Food House";
     heading.setAttribute("href", "./index.html")
     h1.append(heading)
     
@@ -27,6 +27,7 @@ function createHeader() {
 
 function loadHeader() {
     const content = document.getElementById("content")
+    content.classList.add("viewheight") /* for gradient */
     content.appendChild(createHeader());
 }
 

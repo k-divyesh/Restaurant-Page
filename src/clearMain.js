@@ -1,6 +1,6 @@
-function emptyMain() {
+function removeMain() {
     var main = document.querySelector("main");
     main.remove()
 }
 
-export default emptyMain;
+export default removeMain;

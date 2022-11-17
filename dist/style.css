@@ -1,6 +1,6 @@
 :root {
-    --primary: #ddd;
-    --secondary: #303030;
+    --primary: rgb(221, 221, 221);
+    --secondary: rgb(48, 48, 48);
 }
 
 
@@ -20,9 +20,18 @@ body {
 
 #content {
     background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8), transparent 50%);
-    width:100vw;
+}
+
+.viewheight{
+    width: 100vw;
     height: 100vh;
 }
+
+.percentage{
+    width: 100%;
+    height: 100%;
+}
+
 
 header {
     display: flex; flex-direction: row; justify-content: space-between; align-items: center;
@@ -35,6 +44,7 @@ header {
 
 h1{
     cursor: pointer;
+    font-family: 'Josefin Sans';
 }
 
 a{
@@ -44,6 +54,8 @@ a{
 
 a:hover {
     text-underline-offset: 10px;
+    transform: translateY(-10%);
+    transition: transform 0.3s;
 }
 
 h1 > a:hover {
@@ -70,8 +82,8 @@ h1 > a:hover {
 }
 
 h2 {
-    position: absolute; right: 5%; top: 55%;left: 70.5%;
-    font-size: 2.3rem; font-weight: 100; font-family: 'Alfa Slab One', sans-serif;
+    position: absolute; right: 8%; top: 55%;left: 70.5%;
+    font-size: 2.3rem; font-weight:; font-family: 'Lobster', sans-serif;
     color: var(--secondary);
 }
 
@@ -87,4 +99,42 @@ h2 > a:hover {
     font-size: 1.2rem;
 }
 
+
+#menu, #contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-family: 'Poppins';
+
+}
+
+
+#menu > h3 {
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 9px 8px 0px rgba(0,0,0,0.15);        
+    color: var(--secondary);
+    text-decoration: underline;
+}
+
+#menu > h5{
+    color: var(--secondary);
+    font-size: medium;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 0 var(--primary), -2px 0 var(--primary), 0 2px var(--primary), 0 -2px var(--primary), 1px 1px var(--primary), -1px -1px var(--primary), 1px -1px var(--primary), -1px 1px var(--primary);
+
+}
+
+#contact{
+    padding-top: 15px;
+    gap: 25px;
+}
+
+#contact > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary);
+}
 
