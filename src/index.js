@@ -1,3 +1,4 @@
+import css from "./style.css"
 import loadHeader from "./loadHead";
 import removeMain from "./clearMain";
 import loadHome from "./loadHome"
